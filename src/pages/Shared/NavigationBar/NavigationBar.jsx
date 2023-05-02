@@ -1,4 +1,5 @@
 import React from 'react';
+import './Navigation.css'
 import { Button, Container, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
@@ -7,7 +8,7 @@ const NavigationBar = () => {
     <div>
         <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
       <Container>
-        <Navbar.Brand href="#home" className='fs-2 fw-semibold '>Chef Recipe Food</Navbar.Brand>
+        <Navbar.Brand href="#home" className='fs-2 fw-semibold '>Chef <span className='nav-title'>Recipe</span> Food</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mx-auto">

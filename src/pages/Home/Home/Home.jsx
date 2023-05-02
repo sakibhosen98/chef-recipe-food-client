@@ -16,7 +16,7 @@ const Home = () => {
         </div>
         <img className='img-fluid w-50' src={img} alt="" />
     </div>
-      {/* <Category></Category> */}
+      <Category></Category>
     </div>
   );
 };
