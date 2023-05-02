@@ -1,0 +1,9 @@
+.icon{
+  color: tomato;
+  margin-right: 8px;
+}
+.btn-footer{
+  color: white;
+  background-color: tomato;
+  border-radius: 50px;
+}
