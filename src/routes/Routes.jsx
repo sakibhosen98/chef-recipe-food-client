@@ -4,6 +4,9 @@ import Main from "../layouts/Main";
 import Home from "../pages/Home/Home/Home";
 import Blog from "../pages/Blog/Blog";
 import ViewRacipe from "../pages/Home/Recipe/ViewRacipe";
+import NotFound from "../pages/Home/Recipe/NotFound/NotFound";
+import Login from "../Login/Login";
+import SignUp from "../SignUp/SignUp";
 
 const router = createBrowserRouter([
   {
@@ -18,25 +21,24 @@ const router = createBrowserRouter([
         path: "/blog",
         element: <Blog></Blog>,
       },
-      // {
-      //   path: "/recipe",
-      //   element: <ViewRacipe></ViewRacipe>
-
-      // },
       {
         path: "/:id",
         element: <ViewRacipe></ViewRacipe>
+      },
+      {
+        path: 'login',
+        element: <Login></Login>
+      },
+      {
+        path: 'signup',
+        element: <SignUp></SignUp>
       }
     ],
   },
+  {
+    path: '*',
+    element: <NotFound></NotFound>
+  }
 ]);
-
-// const Routes = () => {
-//   return (
-//     <div>
-
-//     </div>
-//   );
-// };
 
 export default router;

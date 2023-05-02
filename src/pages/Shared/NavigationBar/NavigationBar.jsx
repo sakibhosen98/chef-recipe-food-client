@@ -13,12 +13,13 @@ const NavigationBar = () => {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="mx-auto">
             <Link to="/" className='text-decoration-none me-3'>Home</Link>
-            <Link to="/blog" className='text-decoration-none'>Blog</Link>
+            <Link to="/blog" className='text-decoration-none me-3'>Blog</Link>
+            <Link to="/login" className='text-decoration-none me-3'>Login</Link>
+            <Link to="/signup" className='text-decoration-none'>Sign Up</Link>
           </Nav>
           <Nav>
             <Nav.Link href="#deets">Profile </Nav.Link>
             <Nav.Link eventKey={2} href="#memes">
-              <Button>Login</Button>
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
