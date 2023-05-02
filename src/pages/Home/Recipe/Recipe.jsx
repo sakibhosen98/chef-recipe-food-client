@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Recipe = ({ category }) => {
   const { id, name, url,likes, description,experience,numberOfRecipes } = category;
-  console.log(category);
+  // console.log(category);
   return (
     <div>
       <Row xs={1} md={2} className="g-4">
@@ -18,7 +18,7 @@ const Recipe = ({ category }) => {
               <p><small>Experienc: {experience}</small></p>
               <p><small>Number of recipes: {numberOfRecipes}</small></p>
               <p><small>Likes: {likes}</small></p>
-              <Link to="/recipe"><Button>View Recipe</Button></Link>
+              <Link to={`/${id}`}><Button>View Recipe</Button></Link>
             </Card.Body>
           </Card>
         </Col>

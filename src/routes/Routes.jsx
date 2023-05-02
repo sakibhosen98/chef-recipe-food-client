@@ -18,10 +18,15 @@ const router = createBrowserRouter([
         path: "/blog",
         element: <Blog></Blog>,
       },
+      // {
+      //   path: "/recipe",
+      //   element: <ViewRacipe></ViewRacipe>
+
+      // },
       {
-        path: "/recipe",
-        element: <ViewRacipe></ViewRacipe>,
-      },
+        path: "/:id",
+        element: <ViewRacipe></ViewRacipe>
+      }
     ],
   },
 ]);
