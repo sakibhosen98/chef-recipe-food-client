@@ -23,7 +23,6 @@ const Recipe = ({ category }) => {
           </Card>
         </Col>
       </Row>
-      
     </div>
   );
 };

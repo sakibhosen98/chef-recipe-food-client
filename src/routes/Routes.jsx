@@ -7,6 +7,7 @@ import ViewRacipe from "../pages/Home/Recipe/ViewRacipe";
 import NotFound from "../pages/Home/Recipe/NotFound/NotFound";
 import Login from "../Login/Login";
 import SignUp from "../SignUp/SignUp";
+import PrivateRoute from "../PrivateRoutes/PrivateRoute";
 
 const router = createBrowserRouter([
   {
@@ -18,12 +19,12 @@ const router = createBrowserRouter([
         element: <Home></Home>,
       },
       {
-        path: "/blog",
-        element: <Blog></Blog>,
+        path: "blog",
+        element: <PrivateRoute><Blog></Blog></PrivateRoute>
       },
       {
         path: "/:id",
-        element: <ViewRacipe></ViewRacipe>
+        element:<PrivateRoute><ViewRacipe></ViewRacipe></PrivateRoute>
       },
       {
         path: 'login',

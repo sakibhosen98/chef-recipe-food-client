@@ -1,4 +1,7 @@
 import React, { useEffect, useState } from "react";
+import { Rating } from '@smastrom/react-rating'
+import '@smastrom/react-rating/style.css'
+
 import { useParams } from "react-router-dom";
 import { Card, ListGroup } from "react-bootstrap";
 
@@ -7,7 +10,7 @@ const ViewRacipe = () => {
   const [recipes, setRecipes] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/categories")
+    fetch("https://chef-recipe-food-server-sakibhosen98.vercel.app/categories")
       .then((res) => res.json())
       .then((data) => setRecipes(data.find((detail) => detail.id === id.id)))
       .catch((error) => console.error(error));
@@ -24,8 +27,11 @@ const ViewRacipe = () => {
           {recipes.methodOfCookies && recipes.methodOfCookies}
         </Card.Text>
       </Card.Body>
-      <ListGroup className="list-group-flush">
+      <ListGroup className="d-flex list-group-flush">
         <ListGroup.Item>{recipes.rating}</ListGroup.Item>
+        <Rating 
+        style={{ maxWidth: 150 }} 
+        value={Math.round(Rating?.number || 0)} readOnly />
       </ListGroup>
       <Card.Body>
         <Card.Link href="#">Favourite</Card.Link>
