@@ -45,17 +45,17 @@ const FeatureSection = () => {
         <p className="text-center">EXECUTIVE CHEF</p>
       </div>
       <div className="card p-3">
-        <img src={chef1} alt="" />
+        <img src={chef2} alt="" />
         <h3 className="text-center mt-5">Giorgina Anderson</h3>
         <p className="text-center">EXECUTIVE CHEF</p>
       </div>
       <div className="card p-3">
-        <img src={chef1} alt="" />
+        <img src={chef3} alt="" />
         <h3 className="text-center mt-5">Christopher Broad</h3>
         <p className="text-center">EXECUTIVE CHEF</p>
       </div>
       <div className="card p-3">
-        <img src={chef1} alt="" />
+        <img src={chef4} alt="" />
         <h3 className="text-center mt-5">Gordon Ramsay</h3>
         <p className="text-center">EXECUTIVE CHEF</p>
       </div>

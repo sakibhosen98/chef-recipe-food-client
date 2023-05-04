@@ -3,6 +3,9 @@ import './Navigation.css'
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../../providers/AuthProvider';
+import img from '../../../assets/chef3.jpg'
+import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
+import Tooltip from 'react-bootstrap/Tooltip';
 
 const NavigationBar = () => {
 
@@ -29,7 +32,11 @@ const NavigationBar = () => {
             {user && <span>Welcome {user.displayName} <button onClick={handleLogout}>Sign out</button> </span>}
           </Nav>
           <Nav>
-            <Nav.Link href="#deets">Profile </Nav.Link>
+            <Nav.Link href="#deets">
+              
+              <img className='profile' src={img} alt=""/>
+              
+            </Nav.Link>
             <Nav.Link eventKey={2} href="#memes">
             </Nav.Link>
           </Nav>
