@@ -5,7 +5,6 @@ import img from '../../../assets/banner-1.jpg'
 import Category from '../Category/Category';
 import DisplaySection from '../../../Sections/DisplaySection/DisplaySection';
 import FeatureSection from '../../../Sections/FeatureSection/FeatureSection';
-import DownloadPdf from '../../DownloadPdf/DownloadPdf';
 
 const Home = () => {
   return (
@@ -22,7 +21,6 @@ const Home = () => {
       <Category></Category>
       <DisplaySection></DisplaySection>
       <FeatureSection></FeatureSection>
-      <DownloadPdf></DownloadPdf>
     </div>
   );
 };
