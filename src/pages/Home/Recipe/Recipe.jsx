@@ -8,7 +8,7 @@ const Recipe = ({ category }) => {
   // console.log(category);
   return (
     <div>
-      <Row xs={1} md={2} className="g-4">
+      <Row sm={1} md={1} className="g-4">
         <Col>
           <Card>
             <Card.Img variant="top" src={url} />
@@ -24,6 +24,7 @@ const Recipe = ({ category }) => {
         </Col>
       </Row>
     </div>
+    
   );
 };
 

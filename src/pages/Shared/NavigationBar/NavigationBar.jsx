@@ -15,7 +15,7 @@ const NavigationBar = () => {
     }
 
   return (
-    <div>
+    <div className='shadow-lg p-3 mb-5 bg-body-tertiary rounded mb-5'>
         <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
       <Container>
         <Navbar.Brand href="#home" className='fs-2 fw-semibold '>Chef <span className='nav-title'>Recipe</span> Food</Navbar.Brand>
