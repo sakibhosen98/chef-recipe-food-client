@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import './Navigation.css'
-import { Container, Nav, Navbar } from 'react-bootstrap';
+import { Button, Container, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../../providers/AuthProvider';
 import img from '../../../assets/chef3.jpg'
@@ -35,7 +35,7 @@ const NavigationBar = () => {
             <Nav.Link href="#deets">
               
               <img className='profile' src={img} alt=""/>
-              
+              <Link to='/pdf'><Button className='ms-3'>Download PDF</Button></Link>
             </Nav.Link>
             <Nav.Link eventKey={2} href="#memes">
             </Nav.Link>

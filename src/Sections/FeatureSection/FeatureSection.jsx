@@ -9,36 +9,8 @@ import './FeatureSection.css'
 const FeatureSection = () => {
   return (
     <div className="mb-5">
-      <h2 className="chef-title">Our Chefs</h2>
+      <h2 className="text-center categori-title mb-5">Our <span className="categori">Chefs</span> </h2>
       <div className="d-flex flex-sm-column flex-md-row justify-content-center gap-4">
-      {/* <Card>
-        <Card.Img variant="top" src={chef1} />
-        <Card.Body>
-          <Card.Title>Arthur Goon</Card.Title>
-          <Card.Text>EXECUTIVE CHEF</Card.Text>
-        </Card.Body>
-      </Card>
-      <Card>
-        <Card.Img variant="top" src={chef2} />
-        <Card.Body>
-          <Card.Title>Giorgina Anderson</Card.Title>
-          <Card.Text>EXECUTIVE CHEF</Card.Text>
-        </Card.Body>
-      </Card>
-      <Card>
-        <Card.Img variant="top" src="holder.js/100px180" />
-        <Card.Body>
-          <Card.Title>Christopher Broad</Card.Title>
-          <Card.Text>EXECUTIVE CHEF</Card.Text>
-        </Card.Body>
-      </Card>
-      <Card>
-        <Card.Img variant="top" src="holder.js/100px180" />
-        <Card.Body>
-          <Card.Title>Gordon Ramsay</Card.Title>
-          <Card.Text>EXECUTIVE CHEF</Card.Text>
-        </Card.Body>
-      </Card> */}
       <div className="card p-3">
         <img src={chef1} alt="" />
         <h3 className="text-center mt-5">Arthur Goon</h3>

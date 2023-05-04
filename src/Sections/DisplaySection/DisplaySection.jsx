@@ -7,7 +7,7 @@ import img2 from '../../assets/banner-2.jpg'
 const DisplaySection = () => {
   return (
    <div className='mb-5 mt-5'>
-      <h2 className='text-center'>This is display <span className='title'>recipe items</span> </h2>
+      <h2 className='text-center categori-title mb-5'>This is display <span className='categori'>recipe items</span> </h2>
       <Carousel className='mt-5'>
       <Carousel.Item>
         <img
