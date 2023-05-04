@@ -1,13 +1,14 @@
 import React from 'react';
+import './DisplaySection.css'
 import { Carousel } from 'react-bootstrap';
 import img1 from '../../assets/banner-1.jpg'
 import img2 from '../../assets/banner-2.jpg'
 
 const DisplaySection = () => {
   return (
-   <div className='mb-5'>
+   <div className='mb-5 mt-5'>
       <h2 className='text-center'>This is display <span className='title'>recipe items</span> </h2>
-      <Carousel>
+      <Carousel className='mt-5'>
       <Carousel.Item>
         <img
           className="d-block w-100"

@@ -3,7 +3,9 @@ import { Rating } from '@smastrom/react-rating'
 import '@smastrom/react-rating/style.css'
 
 import { useParams } from "react-router-dom";
-import { Card, ListGroup } from "react-bootstrap";
+import { Button, Card, ListGroup } from "react-bootstrap";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const ViewRacipe = () => {
   const id = useParams();
@@ -17,6 +19,10 @@ const ViewRacipe = () => {
   }, []);
 
   console.log(recipes)
+
+  const handleAddToToast = () => {
+    toast('Favourite done!!')
+  }
 
   return (
     <Card className="mx-auto mt-5" style={{ width: "18rem" }}>
@@ -34,8 +40,8 @@ const ViewRacipe = () => {
         value={Math.round(Rating?.number || 0)} readOnly />
       </ListGroup>
       <Card.Body>
-        <Card.Link href="#">Favourite</Card.Link>
-      </Card.Body>
+      <Button onClick={handleAddToToast} variant="primary">Favourite</Button>      </Card.Body>
+      <ToastContainer></ToastContainer>
     </Card>
   );
 };
