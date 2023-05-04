@@ -4,10 +4,11 @@ import './Home.css'
 import img from '../../../assets/banner-1.jpg'
 import Category from '../Category/Category';
 import DisplaySection from '../../../Sections/DisplaySection/DisplaySection';
+import FeatureSection from '../../../Sections/FeatureSection/FeatureSection';
 
 const Home = () => {
   return (
-    <div className='container'>
+    <div className='container bg'>
         <div className='d-flex flex-sm-column-reverse flex-md-row justify-content-center align-items-center mb-5'>
         <div className='w-50 text-center'>
           <h2 className='title'>The <span className='text-warning'>Recipe</span> Food</h2>
@@ -19,6 +20,7 @@ const Home = () => {
     </div>
       <Category></Category>
       <DisplaySection></DisplaySection>
+      <FeatureSection></FeatureSection>
     </div>
   );
 };
